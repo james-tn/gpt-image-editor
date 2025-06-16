@@ -1,0 +1,5 @@
+# --- Core libraries --------------------------------------------------------  
+openai==1.86.0         # SDK that exposes AzureOpenAI + image tools  
+streamlit==1.45.1
+python-dotenv==1.1.0
+Pillow>=10.0,<11.0  
