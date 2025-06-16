@@ -1,0 +1,7 @@
+**/*.env  
+**/models
+autogen
+sk
+**/raw_data
+**/sample
+llama.cpp
