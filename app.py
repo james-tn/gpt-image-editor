@@ -118,7 +118,7 @@ def build_payload(user_prompt: str) -> list:
     1. All previous turns (user / assistant text only)       – kept in chat_history  
     2. The *current* user turn  (text + current image)  
     """  
-    messages = []  
+    messages = [{"role": "system", "content": [{"type": "input_text", "text": "You are a helpful assistant that edits images based on user requests. Whenver possible, suggest ideas to the user on how to create a professional image."}]}]  
   
     # older turns -----------------------------------------------------------  
     for msg in st.session_state.chat_history:  
